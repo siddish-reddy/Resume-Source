@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://siddish.me/}{\Large Siddish Iragamreddy}} & \href{mailto:siddish.ibv@gmail.com}{siddish.ibv@gmail.com}\\
+  %\href{https://github.com/siddish-reddy/}{https://github.com/siddish-reddy/} & Mobile : +91-72860-16654 \\
+  \href{https://www.linkedin.com/in/siddish-reddy-iragam-reddy/}{linkedin.com/in/siddish-reddy-iragam-reddy/} & +91-72860-16654 \\
+  
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sri Venkateswara University College of Engineering}{Tirupati, AP}
+      {Bachelor of Technology in Computer Science and Engineering}{Aug. 2016 -- May. 2020}
+      
+    \resumeSubheading
+      {Sri Chaitanya Junior College}{AP, India}
+      {Intermediate(12th) in Maths, Physics and Chemistry;  (96.1\% State Rank: 1734)}{Jun. 2014 -- Apr. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Internships and Trainings}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Udacity Deep Learning}{Online}
+      {Nanodegree Program}{Aug - Dec 2019}
+      \resumeItemListStart
+        \resumeItem{Projects}
+          {Built convolutional networks for image recognition, recurrent networks for sequence generation, time series forecasting, sentiment analysis, generative adversarial networks for image generation using Pytorch, Numpy and also deployed sentiment analysis model accessible from a website using AWS Lambda and Sagemaker}
+        \resumeItem{Methods}
+         {Studied and applied Transfer Learning, Auto-encoders, Attention, CycleGan, Pix2Pix}
+        \resumeItem{Paper Implementations}
+          {Implemented Word2Vec, LSTM, Multi-layer Neural Networks with back-propagation from scratch using Python and Numpy}
+         
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {nVipani Labs}{Bangalore, KA}
+      {Full-stack Product Development Intern}{May - July 2019}
+      \resumeItemListStart
+        \resumeItem{MEAN Stack}
+          {Contributed to Supply Chain platform called valUchain and extended its functionalities applying micro-services architecture.
+          Part of an agile development team for building an early stage product using Angular 7, also volunteered to built new PWA from ground up.}
+        \resumeItem{Machine Learning}
+          {Understood and researched the relevance of AI/ML for supply chain domain and proposed use cases, and also built prototype for streaming data pipeline using Kafka and Koa.js.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SmartBridge}{Hyderabad, AP}
+      {Machine Learning Trainee and Intern}{June - July 2018}
+      \resumeItemListStart
+        \resumeItem{Data Science Workflow}
+          {Learnt and applied data science techniques and tools like Numpy Pandas, Matplotlib, Scikit-learn for public data-sets}
+        \resumeItem{Machine Learning}
+          {Under taken projects: Insurance  prediction  using  Regression  Techniques,  Bike  Buyer Prediction using Classification techniques and Chatbots.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+    \resumeSubItem{Facial Features Prediction}
+      {Built multi-task DenseNet model with end-to-end app for predicting Ethnicity, Age, Emotion, and Gender from face and deployed it in EC2 for providing API}
+      
+   \resumeSubItem{Reverse Image Search}
+      {Built minimal image search engine by extracting feature vectors and comparing cosine distances to identify closest related images which are optimised by PCA for faster searching}
+ 
+    \resumeSubItem{Detecting missing persons and criminals using Face recognition}
+      {National finalist for submitting Face recognition system using FaceNet for Indian Police Hackathon to detect missing people from live sources and databases}
+      \resumeSubItem{Discover Tirupati}
+      {Web App for discovering places to visit in Tirupati using Google Maps and Yelp APIs, ReactJS}
+      \resumeSubItem{My Reads PWA}
+      {Bookshelf to keep track of reading lists like GoodReads using React}
+  \resumeSubHeadingListEnd
+
+
+ \section{Accomplishments}
+   \resumeSubHeadingListStart
+  
+    \resumeSubItem{Scholarships}
+      {One of 150 Global Facebook  Developer  Circles  Scholars  for  Deep  Learning in 2019 and  1000  Google  India  Scholars of 2018 for  Front-End NanoDegree}
+    \resumeSubItem{Community}
+      {Core Team Head of IGNITE  team  to  develop  start-up  culture,  organise  events,  prepared  the system to be more efficient and organised way and guided student sub-clubs. Founded Coding Club to promote coding culture while unlocking opportunities to members via study group sessions, build-a-thons, contests, workshops and mini-projects.}
+    
+    \resumeSubItem{Competitions}
+     {Top 20 finalist for TCS HumAIn AI contest among 5000+ participants, top 10 teams for Indian Police Hackathon- 2019, Winning team of startup Idea contest of SVUCE -2017. Second in Algorithmist contest of Technical Symposium -2017 and University Elocution competition -2016, 3rd in regional ACE Grand Test for Computer Science.}
+     
+     \resumeSubItem{Online Courses} 
+      {Deep Learning and Front-End Nanodegree, Udacity; Machine Learning, Stanford; Algorithms Toolbox and DS:UC San Diego on Coursera; ML Applications in Sc. \& Eng. by IIT M on NPTEL; Scientific Computing using Python by IIT Bombay; Leadership And Entrepreneurship by IB Hubs, Internet of Things by SmartBridge.}
+      
+  \resumeSubHeadingListEnd
+
+ 
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
